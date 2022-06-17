@@ -1,0 +1,17 @@
+{
+  "name": "@nsea/xlsx",
+  "version": "1.0.0",
+  "description": "json export excel",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && rm -rf esm && tsc -m ES6 --outDir esm --declarationDir esm",
+    "pub": "npm publish --access=public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xlsx": "0.16.9"
+  }
+}

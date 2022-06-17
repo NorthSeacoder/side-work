@@ -1,0 +1,28 @@
+{
+  "name": "@nsea/cz",
+  "version": "0.0.6",
+  "description": "commit adapter",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "cz": "git add . && git-cz",
+    "build": "tsc && rm -rf esm && tsc -m ES6 --outDir esm --declarationDir esm",
+    "pub": "npm publish --access=public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.6.0",
+    "chalk": "^2.4.1",
+    "commitizen": "^4.0.3",
+    "lodash.map": "^4.6.0",
+    "longest": "^2.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./n-cz/dist/index.js"
+    }
+  }
+}

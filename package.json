@@ -1,0 +1,24 @@
+{
+  "name": "side-work",
+  "version": "1.0.0",
+  "description": "各种好玩的",
+  "main": "index.js",
+  "devDependencies": {
+    "@nsea/cz": "workspace:*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NorthSeacoder/side-work.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NorthSeacoder/side-work/issues"
+  },
+  "homepage": "https://github.com/NorthSeacoder/side-work#readme"
+}
