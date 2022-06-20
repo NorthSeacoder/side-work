@@ -2,27 +2,34 @@
   "name": "@nsea/cz",
   "version": "0.0.6",
   "description": "commit adapter",
-  "main": "dist/index.js",
-  "module": "esm/index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "cz": "git add . && git-cz",
-    "build": "tsc && rm -rf esm && tsc -m ES6 --outDir esm --declarationDir esm",
+    "dev": "vite --host",
+    "build": "tsc && vite build && dts-bundle-generator --config ./dts-bundle-generator.config.ts",
     "pub": "npm publish --access=public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^14.6.0",
+    "@types/node": "^17.0.23",
     "chalk": "^2.4.1",
     "commitizen": "^4.0.3",
+    "dts-bundle-generator": "^6.5.0",
+    "globby": "^13.1.2",
     "lodash.map": "^4.6.0",
-    "longest": "^2.0.1"
+    "longest": "^2.0.1",
+    "typescript": "^4.5.4"
   },
   "config": {
     "commitizen": {
-      "path": "./n-cz/dist/index.js"
+      "path": "./packages/nsea/n-cz/dist/index.cjs"
     }
+  },
+  "devDependencies": {
+    "@types/lodash.map": "^4.6.13"
   }
 }

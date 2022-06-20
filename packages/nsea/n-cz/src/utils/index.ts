@@ -2,13 +2,16 @@
  * @Author: mengpeng
  * @Date: 2021-05-20 20:33:20
  * @Last Modified by: mengpeng 
- * @Last Modified time: 2021-05-21 16:27:01 
+ * @Last Modified time: 2022-06-20 15:18:06 
  */
 
 import map from 'lodash.map';
-import longest from 'longest';
+// import longest from 'longest';
+const longest = require('longest');
 import path from 'path';
 import fs from 'fs';
+// import fsSync from 'fs/promises';
+// import {globby} from 'globby';
 
 interface Scope {
     name: String;
@@ -38,12 +41,12 @@ export const getConfig = (projectPath: string = process.cwd()) => {
 export const setCommit = (options: Option) => {
     const {types, defaultScope, defaultType, scopes} = options;
 
-    const length = longest(Object.keys(types)).length + 1;
+    const length = longest(Object.keys(types ?? {})).length + 1;
 
-    var choices = map(types, function (type: Type, key: String) {
+    var choices = map(types ?? ({} as any), function (type: Type, key: String) {
         return {
             name: (key + ':').padEnd(length) + ' ' + type.description,
-            value: key,
+            value: key
         };
     });
     const isInput = !scopes || scopes.length === 0;
@@ -53,20 +56,20 @@ export const setCommit = (options: Option) => {
             name: 'scope',
             message: isInput ? '本次改动涉及范围 (e.g. 组件 or 文件名):' : '选择此次提交的项目',
             choices: isInput ? null : scopes,
-            default: !isInput ? null : defaultScope,
+            default: !isInput ? null : defaultScope
         },
         {
             type: 'list',
             name: 'type',
             message: '选择此次提交的改动类型:',
             choices: choices,
-            default: defaultType,
+            default: defaultType
         },
         {
             type: 'input',
             name: 'message',
-            message: '本次修改的概要信息',
-        },
+            message: '本次修改的概要信息'
+        }
     ];
     return {
         prompter: (cz: any, commit: any) => {
@@ -75,6 +78,14 @@ export const setCommit = (options: Option) => {
                 const head = `[${scope}][${type}] ${message}`;
                 commit(head);
             });
-        },
+        }
     };
 };
+
+// export async function getAllWorkspaces() {
+//     const {
+//         workspaces: {packages}
+//     } = JSON.parse((await fsSync.readFile(path.join(process.cwd(), 'package.json'))).toString('utf8'));
+
+//     return await globby(packages, {onlyDirectories: true});
+// }
