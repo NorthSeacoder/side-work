@@ -1,6 +1,6 @@
 module.exports = {
     parserOpts: {
-        headerPattern: /^\[([^[]+)\]\[(.*)\] (\w*):(.+)$/,
+        headerPattern: /^\[([^[]+)\]\[(.*)\](\w*):(.+)$/,
         headerCorrespondence: ['scope', 'subject', 'type', 'message']
     }
 };
