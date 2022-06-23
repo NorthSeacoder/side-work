@@ -4,11 +4,15 @@
   "description": "各种好玩的",
   "main": "index.js",
   "devDependencies": {
-    "@nsea/cz": "workspace:*"
+    "@nsea/cz": "workspace:*",
+    "commitizen": "^4.0.3",
+    "conventional-changelog": "^3.1.25",
+    "vite": "^2.9.12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "cz": "git add . && git-cz"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/NorthSeacoder/side-work/issues"
   },
-  "homepage": "https://github.com/NorthSeacoder/side-work#readme"
+  "homepage": "https://github.com/NorthSeacoder/side-work#readme",
+  "config": {
+    "commitizen": {
+      "path": "./nsea/n-cz"
+    }
+  }
 }

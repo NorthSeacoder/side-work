@@ -7,11 +7,11 @@ module.exports = defineConfig({
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
             name: 'index',
-            formats: ['es', 'cjs', 'iife'],
+            formats: ['es', 'cjs'],
             fileName: (format) => `index.${format}.js`
         },
         rollupOptions: {
-            external: ['fs', 'path']
+            external: ['fs', 'path','child_process']
         }
     }
 });

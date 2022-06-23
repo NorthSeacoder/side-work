@@ -40,3 +40,13 @@ Add the following to your `czrc.json`:
 }
 ```
 scope will be input when scopes is [] or undefined
+- support pnpm-workspack
+czrc.json can be null with pnpm-workspack.yaml
+    - commit-message as '[workspace][subproject] type: message'
+e.g.
+```
+- packages
+    - pro1
+    - pro2
+msg:[packages][pro1] init: xxx
+```
