@@ -12,6 +12,6 @@ const config = Q.all([conventionalChangelog, parserOpts, recommendedBumpOpts, wr
         return {conventionalChangelog, parserOpts, recommendedBumpOpts, writerOpts};
     }
 );
-export default (path) => {
+export default (path?: string) => {
     generateCL({config, append: true}, {}, {path}).pipe(fs.createWriteStream('CHANGELOG.md'));
 };
