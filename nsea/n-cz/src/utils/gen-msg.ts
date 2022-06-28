@@ -41,7 +41,6 @@ export const commonMsg = (options: Option) => {
             cz.prompt(promptOption).then(async (answer: Answer) => {
                 const {type, scope, message} = answer;
                 const head = `[${scope}][${type}] ${message}`;
-                console.log(head);
                 commit(head);
             });
         }
@@ -72,12 +71,13 @@ export const monoMsg = (options: Option, workspaces: Array<string>) => {
         }
     ];
     return {
+        //cz: any,commit: (msg: string) => void
         prompter: (cz: any,commit: (msg: string) => void) => {
             cz.prompt(promptOption).then((answer: Answer) => {
                 const {type, message} = answer;
                 const tag = genTag(workspaces);
                 const head = `${tag}${type}: ${message}`;
-                console.log(head);
+                // console.log(head);
                 commit(head);
             });
         }

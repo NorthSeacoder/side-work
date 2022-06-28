@@ -3,15 +3,13 @@ import type {WorkspaceWeight, ChangeFile} from '../types/types';
 
 const RegxFilenameToWorkspace = /([\w\d-]+\/[\w\d-]+)\//;
 const calculateWorkspaceWeight = (workspaces: Array<string>, changedFiles: Array<string>) => {
-    const weightMap: WorkspaceWeight = workspaces.reduce((acc, workspace) => ({...acc, [workspace]: 0}), {chore: 0});
-
+    const weightMap: WorkspaceWeight = workspaces.reduce((acc, workspace) => ({...acc, [workspace]: 0}), {});
     changedFiles.forEach((file) => {
         const matched = file.match(RegxFilenameToWorkspace);
-        const workspace: string = matched?.[1] ?? 'chore';
+        const workspace: string = matched?.[1] ?? 'root/core';
 
         weightMap[workspace] += 1;
     });
-
     return weightMap;
 };
 const arrayToTag = (array: Array<string>) => array.map((folder) => (folder ? `[${folder}]` : '')).join('');
@@ -27,7 +25,6 @@ const genMultipleTag = (sortedTagWorkspaces: [string, number][] | [any][]) => {
 
     sortedTagWorkspaces.forEach(([workspace]) => {
         const [, subTag] = genTag(workspace);
-
         if (subTag?.length) {
             // 只考虑两层 [][] 的 tag 合并
             if (subTag.length === 2) {
@@ -44,8 +41,14 @@ const genMultipleTag = (sortedTagWorkspaces: [string, number][] | [any][]) => {
             }
         }
     });
-
-    return tags.map((tag) => arrayToTag(tag)).join(' & ');
+    const result = tags
+        .reduce((res, cur) => {
+            res.push(cur.join(':'));
+            return res;
+        }, [])
+        .join(' & ');
+    return arrayToTag(['root', result]);
+    // return tags.map((tag) => arrayToTag(tag)).join(' & ');
 };
 
 export default (workspaces: Array<string>) => {
@@ -59,7 +62,7 @@ export default (workspaces: Array<string>) => {
         new Set(Object.values(changedFileMap).reduce((acc, files) => [...acc, ...files], []))
     );
     const weightMap = calculateWorkspaceWeight(workspaces, changedFiles);
-    const tagWorkspaces = Object.entries(weightMap).filter(([workspace, weight]) => workspace !== 'chore' &&weight > 0);
+    const tagWorkspaces = Object.entries(weightMap).filter(([, weight]) => weight > 0);
 
     const isMultiple = tagWorkspaces.length > 1;
     let tag;

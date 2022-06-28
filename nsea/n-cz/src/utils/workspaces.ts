@@ -8,7 +8,7 @@ export function getAllWorkspaces() {
         const file = fs.readFileSync(configPath, 'utf8');
         const {packages} = YAML.parse(file);
 
-        return globby.sync(packages, {onlyDirectories: true});
+        return [...globby.sync(packages, {onlyDirectories: true}), 'root/core'];
     } catch (error) {
         return [];
     }

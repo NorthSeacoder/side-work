@@ -4,15 +4,20 @@
   "description": "各种好玩的",
   "main": "index.js",
   "devDependencies": {
+    "@nsea/change-log-preset": "workspace:*",
     "@nsea/cz": "workspace:*",
+    "@types/node": "^17.0.23",
     "commitizen": "^4.0.3",
+    "common": "workspace:*",
     "conventional-changelog": "^3.1.25",
+    "esno": "^0.16.3",
     "vite": "^2.9.12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npx only-allow pnpm",
-    "cz": "git add . && git-cz"
+    "cz": "git add . && git-cz",
+    "cl": "esno scripts/generate-change-log.ts"
   },
   "repository": {
     "type": "git",

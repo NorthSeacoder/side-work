@@ -9,7 +9,8 @@
     "cz": "git add . && git-cz",
     "dev": "vite --host",
     "build": "tsc && vite build",
-    "pub": "npm publish --access=public"
+    "pub": "npm publish --access=public",
+    "cl": "esno scripts/generate-change-log.ts"
   },
   "keywords": [],
   "author": "",

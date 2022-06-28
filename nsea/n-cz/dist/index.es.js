@@ -6064,7 +6064,7 @@ function getAllWorkspaces() {
     const configPath = path.join(process.cwd(), "pnpm-workspace.yaml");
     const file = fs.readFileSync(configPath, "utf8");
     const { packages } = YAML.parse(file);
-    return globby.sync(packages, { onlyDirectories: true });
+    return [...globby.sync(packages, { onlyDirectories: true }), "root/core"];
   } catch (error) {
     return [];
   }
@@ -6900,11 +6900,11 @@ function gitChangedFiles() {
 }
 const RegxFilenameToWorkspace = /([\w\d-]+\/[\w\d-]+)\//;
 const calculateWorkspaceWeight = (workspaces, changedFiles) => {
-  const weightMap = workspaces.reduce((acc, workspace) => ({ ...acc, [workspace]: 0 }), { chore: 0 });
+  const weightMap = workspaces.reduce((acc, workspace) => ({ ...acc, [workspace]: 0 }), {});
   changedFiles.forEach((file) => {
     var _a;
     const matched = file.match(RegxFilenameToWorkspace);
-    const workspace = (_a = matched == null ? void 0 : matched[1]) != null ? _a : "chore";
+    const workspace = (_a = matched == null ? void 0 : matched[1]) != null ? _a : "root/core";
     weightMap[workspace] += 1;
   });
   return weightMap;
@@ -6934,7 +6934,11 @@ const genMultipleTag = (sortedTagWorkspaces) => {
       }
     }
   });
-  return tags.map((tag) => arrayToTag(tag)).join(" & ");
+  const result = tags.reduce((res, cur) => {
+    res.push(cur.join(":"));
+    return res;
+  }, []).join(" & ");
+  return arrayToTag(["root", result]);
 };
 var genTag$1 = (workspaces) => {
   var _a;
@@ -6945,7 +6949,7 @@ var genTag$1 = (workspaces) => {
   }
   const changedFiles = Array.from(new Set(Object.values(changedFileMap).reduce((acc, files) => [...acc, ...files], [])));
   const weightMap = calculateWorkspaceWeight(workspaces, changedFiles);
-  const tagWorkspaces = Object.entries(weightMap).filter(([workspace, weight]) => workspace !== "chore" && weight > 0);
+  const tagWorkspaces = Object.entries(weightMap).filter(([, weight]) => weight > 0);
   const isMultiple = tagWorkspaces.length > 1;
   let tag;
   if (!isMultiple) {
@@ -6993,7 +6997,6 @@ const commonMsg = (options2) => {
       cz.prompt(promptOption).then(async (answer) => {
         const { type, scope, message } = answer;
         const head = `[${scope}][${type}] ${message}`;
-        console.log(head);
         commit(head);
       });
     }
@@ -7028,7 +7031,6 @@ const monoMsg = (options2, workspaces) => {
         const { type, message } = answer;
         const tag = genTag$1(workspaces);
         const head = `${tag}${type}: ${message}`;
-        console.log(head);
         commit(head);
       });
     }
