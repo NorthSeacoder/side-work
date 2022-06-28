@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@nsea/change-log-preset': workspace:*
+      '@nsea/cl': workspace:*
       '@nsea/cz': workspace:*
       '@types/node': ^17.0.23
       commitizen: ^4.0.3
@@ -13,7 +13,7 @@ importers:
       esno: ^0.16.3
       vite: ^2.9.12
     devDependencies:
-      '@nsea/change-log-preset': link:nsea/change-log-preset
+      '@nsea/cl': link:nsea/n-cl
       '@nsea/cz': link:nsea/n-cz
       '@types/node': 17.0.45
       commitizen: 4.2.4
@@ -22,7 +22,7 @@ importers:
       esno: 0.16.3
       vite: 2.9.12
 
-  nsea/change-log-preset:
+  nsea/n-cl:
     specifiers:
       compare-func: ^2.0.0
       q: ^1.5.1

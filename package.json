@@ -4,7 +4,7 @@
   "description": "各种好玩的",
   "main": "index.js",
   "devDependencies": {
-    "@nsea/change-log-preset": "workspace:*",
+    "@nsea/cl": "workspace:*",
     "@nsea/cz": "workspace:*",
     "@types/node": "^17.0.23",
     "commitizen": "^4.0.3",

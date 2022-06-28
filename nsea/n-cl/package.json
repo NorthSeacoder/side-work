@@ -1,5 +1,5 @@
 {
-  "name": "@nsea/change-log-preset",
+  "name": "@nsea/cl",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
