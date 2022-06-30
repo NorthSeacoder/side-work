@@ -5,15 +5,25 @@
 
 ## 想法
 
--   优化 change-log 生产,尽可能简化引入方式
--   升级 cz
+-   [x] 优化 change-log 生产,尽可能简化引入方式
+-   [x] 升级 cz
 -   franky 切换为 ts 以及打包(vite/webpack)
 -   franky 支持点击跳转
 -   side-work 添加 docs
     -   常用文档翻译
     -   各种工具文档
 -   [readme](https://github.com/Louis3797/awesome-readme-template) 优化 readme 格式
+
     -   整个模板?
+
+-   [freenom](https://www.freenom.com/zh/index.html?lang=zh)免费域名
+
+### 待整理
+
+-   整理浏览器收藏夹
+-   整理掘金收藏
+-   github star
+-   整理已下载教程
 
 ### 看看
 
