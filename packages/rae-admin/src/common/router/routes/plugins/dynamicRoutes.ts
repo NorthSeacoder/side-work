@@ -1,5 +1,5 @@
 import type { RouteModuleList } from '../typings'
-import { useRouteStore } from '~/stores'
+import { useRouteStore } from '~/common/stores'
 
 type RouteModule = GetArrayItemType<RouteModuleList>
 

@@ -1,7 +1,7 @@
 
 import type { RouteRecordRaw } from 'vue-router'
-import { EnumPath } from '~/enums'
-import { BlankLayout } from '~/layouts'
+import { EnumPath } from '~/common/enums'
+import { BlankLayout } from '~/common/layouts'
 
 export const basicRoutes: RouteRecordRaw[] = [
   {

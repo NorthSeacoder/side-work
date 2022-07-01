@@ -22,9 +22,9 @@
 <script setup lang="ts">
 import MenuWithChildren from './MenuWithChildren.vue'
 import MenuItem from './MenuItem.vue'
-import { useCollapsed } from '~/layouts/default/useCollapsed'
-import type { RouteModuleList } from '~/router/routes/typings'
-import { useRouteStore } from '~/stores'
+import { useCollapsed } from '~/common/layouts/default/useCollapsed'
+import type { RouteModuleList } from '~/common/router/routes/typings'
+import { useRouteStore } from '~/common/stores'
 
 const { getCollapsed } = useCollapsed()
 

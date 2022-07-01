@@ -1,6 +1,6 @@
 import type { RouteRecordRaw } from 'vue-router'
 import { SettingOutlined } from '@ant-design/icons-vue'
-import { DefaultLayout } from '~/layouts'
+import { DefaultLayout } from '~/common/layouts'
 
 const route: RouteRecordRaw = {
   path: '/about',

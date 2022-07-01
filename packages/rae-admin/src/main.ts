@@ -2,12 +2,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import '@unocss/reset/tailwind.css'
-import '~/styles/index.less'
+import '~/common/styles/index.less'
 import 'uno.css'
 
-import { setupStore } from '~/stores'
-import { setupRouter } from '~/router'
-import { setupGlobDirectives } from '~/directives'
+import { setupStore } from '~/common/stores'
+import { setupRouter } from '~/common/router'
+import { setupGlobDirectives } from '~/common/directives'
 
 function setupApp() {
   const app = createApp(App)

@@ -10,8 +10,8 @@
   </a-menu-item>
 </template>
 <script setup lang="ts">
-import type { RouteModuleList } from '~/router/routes/typings'
-import { isUrl } from '~/utils/is'
+import type { RouteModuleList } from '~/common/router/routes/typings'
+import { isUrl } from '~/common/utils/is'
 
 interface Props {
   menu: GetArrayItemType<RouteModuleList>

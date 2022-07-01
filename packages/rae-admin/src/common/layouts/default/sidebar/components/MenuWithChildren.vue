@@ -26,7 +26,7 @@
 </template>
 <script setup lang="ts">
 import MenuItem from './MenuItem.vue'
-import type { RouteModuleList } from '~/router/routes/typings'
+import type { RouteModuleList } from '~/common/router/routes/typings'
 
 interface Props {
   menu: GetArrayItemType<RouteModuleList>

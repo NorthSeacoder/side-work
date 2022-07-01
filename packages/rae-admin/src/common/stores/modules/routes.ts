@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import type { RouteModuleList } from '~/router/routes/typings'
+import type { RouteModuleList } from '~/common/router/routes/typings'
 
 interface RouteState {
   routes: RouteModuleList

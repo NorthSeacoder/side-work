@@ -42,10 +42,6 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         {
           find: /#\//,
           replacement: `${pathResolve('types')}/`
-        },
-        {
-          find: /^@common\//,
-          replacement: `${pathResolve('src/common')}/`
         }
       ]
     },

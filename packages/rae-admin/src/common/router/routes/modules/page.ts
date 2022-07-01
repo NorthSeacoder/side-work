@@ -2,7 +2,7 @@ import type { RouteRecordRaw } from 'vue-router'
 import {
   ChromeOutlined
 } from '@ant-design/icons-vue'
-import { DefaultLayout } from '~/layouts'
+import { DefaultLayout } from '~/common/layouts'
 
 const route: RouteRecordRaw = {
   path: '/page',
