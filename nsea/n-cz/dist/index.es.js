@@ -6885,7 +6885,8 @@ function getFiles(cmd) {
   const [command, ...args] = cmd.split(" ");
   const result = spawnSync(command, args);
   const files = result.stdout.toString().split("\n").slice(0, -1);
-  return files;
+  const whiteFiles = ["pnpm-lock.yaml"];
+  return files.filter((item) => !whiteFiles.includes(item));
 }
 function gitChangedFiles() {
   const baseCmd = "git diff --relative --name-only --diff-filter=ACDMRTUXB";

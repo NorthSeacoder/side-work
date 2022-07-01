@@ -2,7 +2,7 @@
  * @Author: youboli
  * @Date: 2022-05-06 11:38:45
  * @Last Modified by: mengpeng 
- * @Last Modified time: 2022-06-22 16:55:19 
+ * @Last Modified time: 2022-07-01 16:55:32 
  */
 
 import {spawnSync} from 'child_process';
@@ -11,12 +11,10 @@ import type {ChangeFile} from '../types/types';
 function getFiles(cmd: string) {
     const [command, ...args] = cmd.split(' ');
     const result = spawnSync(command, args);
-
     const files = result.stdout.toString().split('\n').slice(0, -1);
-
-    return files;
+    const whiteFiles = ['pnpm-lock.yaml'];
+    return files.filter((item) => !whiteFiles.includes(item));
 }
-
 // function unique(stagedFiles, unStagedFiles) {
 //     return [...new Set([...stagedFiles, ...unStagedFiles])];
 // }
