@@ -7,6 +7,8 @@
 
 -   [x] 优化 change-log 生产,尽可能简化引入方式
 -   [x] 升级 cz
+-   [] admin
+    - 知识点管理
 -   franky 切换为 ts 以及打包(vite/webpack)
 -   franky 支持点击跳转
 -   side-work 添加 docs
@@ -53,14 +55,13 @@
 -   [17 个 JavaScript 一行代码](https://javascript.plainenglish.io/17-life-saving-javascript-one-liners-part1-b0b0b32c9f61)
 -   [Vue 热门面试题](https://mokkapps.de/blog/my-top-vue-js-interview-questions/)
 
-
 ### 中文
 
 -   [Webapck5 核心打包原理全流程解析](https://juejin.cn/post/7031546400034947108)
 -   [关于依赖管理的真相 — 前端包管理器探究](https://github.com/Geekhyt/weekly/issues/29)
--   [深入理解Vite核心原理](https://juejin.cn/post/7064853960636989454)
+-   [深入理解 Vite 核心原理](https://juejin.cn/post/7064853960636989454)
 -   [项目级 monorepo 策略最佳实践](https://fed.taobao.org/blog/taofed/do71ct/uihagy/)
 -   [新技术学习不完全指北：以 Rust 为例](https://mp.weixin.qq.com/s/xtCfAiVEwXLwWDQmCbO1mw)
--   [2021年前端面试必读文章](https://juejin.cn/post/6844904116339261447)
+-   [2021 年前端面试必读文章](https://juejin.cn/post/6844904116339261447)
 -   [ 21 个开源项目](https://mp.weixin.qq.com/s/-8GrPZPTPdaqCwENfRQCoA)
 -   [10 个前端应该关注的 YouTube 频道](https://mp.weixin.qq.com/s/D9N0LGBJtXvWcjitPrGb5A)
