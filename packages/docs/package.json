@@ -1,0 +1,26 @@
+{
+    "name": "docs",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "pnpm docs:dev",
+        "docs:dev": "vitepress dev pkgs",
+        "docs:build": "vitepress build pkgs",
+        "docs:serve": "vitepress serve pkgs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "vitepress": "1.0.0-alpha.4",
+        "vue": "3.2.33"
+    },
+    "peerDependencyRules": {
+        "ignoreMissing": [
+            "@types/react",
+            "react",
+            "react-dom"
+        ]
+    }
+}
