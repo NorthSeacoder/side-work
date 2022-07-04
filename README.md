@@ -8,7 +8,7 @@
 -   [x] 优化 change-log 生产,尽可能简化引入方式
 -   [x] 升级 cz
 -   [] admin
-    - 知识点管理
+    -   知识点管理
 -   franky 切换为 ts 以及打包(vite/webpack)
 -   franky 支持点击跳转
 -   side-work 添加 docs
@@ -41,6 +41,7 @@
 
 ## 阅读(初筛)
 
+-   [HTML Tips - The hidden Gems](PDF:learning/书/IT)
 -   [A Guide To CSS Debugging](https://www.smashingmagazine.com/2021/10/guide-debugging-css/)
 -   [terminal-for-js-devs](https://www.joshwcomeau.com/javascript/terminal-for-js-devs/)
 -   [Code Reviews 指南](https://www.semasoftware.com/blog/code-reviews-101-the-basics)
@@ -57,6 +58,7 @@
 
 ### 中文
 
+-   [Oh Shit, Git](https://ohshitgit.com/zh)
 -   [Webapck5 核心打包原理全流程解析](https://juejin.cn/post/7031546400034947108)
 -   [关于依赖管理的真相 — 前端包管理器探究](https://github.com/Geekhyt/weekly/issues/29)
 -   [深入理解 Vite 核心原理](https://juejin.cn/post/7064853960636989454)
