@@ -41,6 +41,11 @@
 
 ## 阅读(初筛)
 
+-   [web 开发资源](https://web-dev-resources.com/#/)
+-   [各种动画](https://xsgames.co/animatiss/)
+-   [配色](https://coolors.co/generate)
+-   [formAPI](https://formbold.com/docs)
+-   [console 的其他功能](https://markodenic.com/use-console-log-like-a-pro/)
 -   [HTML Tips - The hidden Gems](PDF:learning/书/IT)
 -   [A Guide To CSS Debugging](https://www.smashingmagazine.com/2021/10/guide-debugging-css/)
 -   [terminal-for-js-devs](https://www.joshwcomeau.com/javascript/terminal-for-js-devs/)
