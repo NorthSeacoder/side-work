@@ -14,6 +14,8 @@
 -   side-work 添加 docs
     -   常用文档翻译
     -   各种工具文档
+-   利用 github-action 实现每日复习提醒
+    -   [rss 定时提醒](https://github.com/ChanceYu/front-end-rss)
 -   [readme](https://github.com/Louis3797/awesome-readme-template) 优化 readme 格式
 
     -   整个模板?
