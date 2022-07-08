@@ -1,3 +1,4 @@
 <template>
-  <router-view />
+    <router-view />
+    <simple-modal :dialog-props="{zIndex: 11}" />
 </template>
