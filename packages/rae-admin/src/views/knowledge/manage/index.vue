@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
 import {PageWrapper} from '~/common/components/Page';
-import {useModal} from '~/common/hooks';
+import {useModal,useCommonModal} from '~/common/hooks';
 import {columns, Params} from './constant/options';
 import EditModal from './modal/edit-form.vue';
 interface FormState {
@@ -61,6 +61,10 @@ const onEditItem = (item: Params = {}) => {
         }
     });
 };
+
+
+const modal = useCommonModal();
+modal.open(EditModal,props,options)
 //table
 const data = reactive([]);
 </script>
