@@ -53,6 +53,7 @@
 
 ## 阅读(初筛)
 
+-   [函数式编程术语](https://github.com/hemanth/functional-programming-jargon)
 -   [基于 vue/repl 的 vue3 挑战](https://github.com/webfansplz/vuejs-challenges)
 -   [Executing shell commands from Node.js](https://2ality.com/2022/07/nodejs-child-process.html)
 -   [Node.js Import Aliases](https://abhijithota.me/posts/node-import-aliases/)
