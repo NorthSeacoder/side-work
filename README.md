@@ -17,6 +17,7 @@
     -   常用文档翻译
     -   各种工具文档
 -   利用 github-action 实现每日复习提醒
+-   参考[流莺书签](https://github.com/alanhzw/warbler-homepage)
     -   [rss 定时提醒](https://github.com/ChanceYu/front-end-rss)
 -   [readme](https://github.com/Louis3797/awesome-readme-template) 优化 readme 格式
 
@@ -50,9 +51,16 @@
 
 -   [命令行展示优化](https://github.com/sindresorhus/yoctocolors)
 -   [从模板生产 doc](https://github.com/alonrbar/easy-template-x)
+-   [神经网络](https://brain.js.org/#/)
+-   [SMSBoom](https://github.com/OpenEthan/SMSBoom)
 
 ## 阅读(初筛)
 
+-   [appwrite](https://appwrite.io/)
+-   [Statements Vs. Expressions](https://www.joshwcomeau.com/javascript/statements-vs-expressions/)
+-   [css 滚动事件](https://www.netlify.com/blog/fun-parallax-scrolling-css-for-matterday/)
+-   [happy-dom](https://github.com/capricorn86/happy-dom)
+-   [When You Should Prefer Map Over Object In JavaScript](https://www.zhenghao.io/posts/object-vs-map)
 -   [函数式编程术语](https://github.com/hemanth/functional-programming-jargon)
 -   [基于 vue/repl 的 vue3 挑战](https://github.com/webfansplz/vuejs-challenges)
 -   [Executing shell commands from Node.js](https://2ality.com/2022/07/nodejs-child-process.html)
