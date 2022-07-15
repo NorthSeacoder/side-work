@@ -85,6 +85,7 @@ importers:
       '@types/lodash-es': ^4.17.6
       '@types/node': 17.0.31
       '@types/nprogress': 0.2.0
+      '@types/underscore': ^1.11.4
       '@unocss/reset': 0.33.1
       '@vitejs/plugin-vue': 2.3.2
       '@vitejs/plugin-vue-jsx': ^1.3.10
@@ -98,6 +99,7 @@ importers:
       nprogress: 0.2.0
       pinia: 2.0.14
       typescript: 4.6.4
+      underscore: ^1.13.4
       unocss: 0.33.1
       unplugin-auto-import: 0.6.9
       unplugin-icons: 0.14.3
@@ -115,6 +117,7 @@ importers:
       dayjs: registry.npmmirror.com/dayjs/1.11.2
       nprogress: registry.npmmirror.com/nprogress/0.2.0
       pinia: registry.npmmirror.com/pinia/2.0.14_ytvqwwdyss532bvoq2clv4ed5m
+      underscore: registry.npmmirror.com/underscore/1.13.4
       vue: registry.npmmirror.com/vue/3.2.33
       vue-router: registry.npmmirror.com/vue-router/4.0.15_vue@3.2.33
       xlsx: registry.npmmirror.com/xlsx/0.18.5
@@ -122,6 +125,7 @@ importers:
       '@types/lodash-es': registry.npmmirror.com/@types/lodash-es/4.17.6
       '@types/node': registry.npmmirror.com/@types/node/17.0.31
       '@types/nprogress': registry.npmmirror.com/@types/nprogress/0.2.0
+      '@types/underscore': registry.npmmirror.com/@types/underscore/1.11.4
       '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/2.3.2_vite@2.9.8+vue@3.2.33
       '@vitejs/plugin-vue-jsx': registry.npmmirror.com/@vitejs/plugin-vue-jsx/1.3.10
       eslint: registry.npmmirror.com/eslint/8.15.0
@@ -3047,6 +3051,12 @@ packages:
     resolution: {integrity: sha512-1cYJrqq9GezNFPsWTZpFut/d4CjpZqA0vhqDUPFWYKF1oIyBz5qnoYMzR+0C/T96t3ebLAC1SSnwrVOm5/j74A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/nprogress/-/nprogress-0.2.0.tgz}
     name: '@types/nprogress'
     version: 0.2.0
+    dev: true
+
+  registry.npmmirror.com/@types/underscore/1.11.4:
+    resolution: {integrity: sha512-uO4CD2ELOjw8tasUrAhvnn2W4A0ZECOvMjCivJr4gA9pGgjv+qxKWY9GLTMVEK8ej85BxQOocUyE7hImmSQYcg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/underscore/-/underscore-1.11.4.tgz}
+    name: '@types/underscore'
+    version: 1.11.4
     dev: true
 
   registry.npmmirror.com/@types/web-bluetooth/0.0.14:
@@ -6389,6 +6399,12 @@ packages:
       defu: registry.npmmirror.com/defu/6.0.0
       jiti: registry.npmmirror.com/jiti/1.14.0
     dev: true
+
+  registry.npmmirror.com/underscore/1.13.4:
+    resolution: {integrity: sha512-BQFnUDuAQ4Yf/cYY5LNrK9NCJFKriaRbD9uR1fTeXnBeoa97W0i41qkZfGO9pSo8I5KzjAcSY2XYtdf0oKd7KQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/underscore/-/underscore-1.13.4.tgz}
+    name: underscore
+    version: 1.13.4
+    dev: false
 
   registry.npmmirror.com/undici/5.5.1:
     resolution: {integrity: sha512-MEvryPLf18HvlCbLSzCW0U00IMftKGI5udnjrQbC5D4P0Hodwffhv+iGfWuJwg16Y/TK11ZFK8i+BPVW2z/eAw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/undici/-/undici-5.5.1.tgz}

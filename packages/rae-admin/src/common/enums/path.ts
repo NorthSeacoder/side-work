@@ -1,6 +1,6 @@
 export enum EnumPath {
   // home path
-  HOME = '/about',
+  HOME = '/knowledge/manage',
   // not found path
   NOT_FOUND = '/not-found'
 }
