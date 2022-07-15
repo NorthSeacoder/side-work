@@ -5,22 +5,22 @@ import {
 import { DefaultLayout } from '~/common/layouts'
 
 const route: RouteRecordRaw = {
-  path: '/knowledge',
-  name: '资料管理',
+  path: '/config',
+  name: 'Config',
   component: DefaultLayout,
-  redirect: '/knowledge/manage',
+  redirect: '/config/common-config',
   meta: {
-    title: 'Knowledge',
+    title: '配置管理',
     icon: AppstoreOutlined,
-    sort: 1
+    sort: 2
   },
   children: [
     {
-      path: 'manage',
-      name: 'KnowledgeManage',
-      component: () => import('~/views/knowledge/manage/index.vue'),
+      path: 'common-config',
+      name: 'CommonConfig',
+      component: () => import('~/views/config/common-config/index.vue'),
       meta: {
-        title: '资料管理',
+        title: '通用配置',
         sort: 1
       }
     }
