@@ -53,9 +53,13 @@
 -   [从模板生产 doc](https://github.com/alonrbar/easy-template-x)
 -   [神经网络](https://brain.js.org/#/)
 -   [SMSBoom](https://github.com/OpenEthan/SMSBoom)
+-   [github action 自动抓取图片](https://github.com/niumoo/bing-wallpaper)
 
 ## 阅读(初筛)
 
+-   [一行 bash 代码](https://github.com/onceupon/Bash-Oneliner)
+-   [静态网站支持 OAuth](https://abyteofcoding.com/blog/oauth-with-cloudflare-workers-on-a-statically-generated-site/)
+-   [Tiny_Python_Projects(下载)](http://tinypythonprojects.com/Tiny_Python_Projects.pdf)
 -   [appwrite](https://appwrite.io/)
 -   [Statements Vs. Expressions](https://www.joshwcomeau.com/javascript/statements-vs-expressions/)
 -   [css 滚动事件](https://www.netlify.com/blog/fun-parallax-scrolling-css-for-matterday/)
@@ -88,6 +92,7 @@
 
 ### 中文
 
+-   [转场动画](https://mp.weixin.qq.com/s/2jFTraKRPykCR4J82O3qQg)
 -   [google 软件工程(docs 参考)](https://qiangmzsx.github.io/Software-Engineering-at-Google/#/zh-cn/Foreword)
 -   [java 学 web](https://imf.ms/web/2022/07/05/my-first-web-hybird-project-experience/)
 -   [tauri 系列](https://www.zhihu.com/column/c_1519079232848785408)
