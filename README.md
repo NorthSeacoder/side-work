@@ -59,6 +59,8 @@
 
 ## 阅读(初筛)
 
+-   [ts 常见的 7 个问题](https://www.freecodecamp.org/news/the-top-stack-overflowed-typescript-questions-explained/)
+-   [vue hook](https://blog.logrocket.com/getting-started-vue-composables/)
 -   [怎样不阻塞浏览器](https://medium.com/@matthew.costello/frontend-web-performance-the-essentials-1-cb6513e1c3a1)
 -   [一行 bash 代码](https://github.com/onceupon/Bash-Oneliner)
 -   [静态网站支持 OAuth](https://abyteofcoding.com/blog/oauth-with-cloudflare-workers-on-a-statically-generated-site/)
@@ -92,6 +94,9 @@
 -   [20 个 JavaScript 奇淫巧技](https://medium.com/geekculture/javascript-hacks-cf8f0fecbc60)
 -   [17 个 JavaScript 一行代码](https://javascript.plainenglish.io/17-life-saving-javascript-one-liners-part1-b0b0b32c9f61)
 -   [Vue 热门面试题](https://mokkapps.de/blog/my-top-vue-js-interview-questions/)
+-   [rety,记录 text 编辑](https://rety.verou.me/)
+-   [node path](https://2ality.com/2022/07/nodejs-path.html)
+-   [37 岁转码,入职 google](https://www.freecodecamp.org/news/coding-interview-prep-for-big-tech/)
 
 ### 中文
 
