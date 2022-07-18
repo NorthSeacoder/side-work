@@ -8,8 +8,10 @@
 -   [x] 优化 change-log 生产,尽可能简化引入方式
 -   [x] 升级 cz
 -   franky 切换为 ts 以及打包(vite/webpack)
+    -   支持直接打开文档相关页面参考[connector](org-93011474@github.com:mintlify/connector.git)
 -   chrome 扩展
     -   支持本地修改 feat/prod
+    -   直接记录到 appwrite
 -   []admin
     -   知识点管理
 -   franky 支持点击跳转
