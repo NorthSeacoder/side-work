@@ -45,6 +45,7 @@
 -   [JavaScript 测试教程](https://wanago.io/2022/04/18/advanced-mocking-jest-react-testing-library/)
 -   [chrome 扩展开发](https://github.com/sxei/chrome-plugin-demo)
 -   [chrome 扩展开发文档](https://developer.chrome.com/docs/extensions/reference/)
+-   [Chrome 插件(扩展)开发全攻略](https://www.cnblogs.com/liuxianan/p/chrome-plugin-develop.html)
 -   [DOM 基础](https://www.freecodecamp.org/news/javascript-dom-manipulation/)
 
 ## 工作相关
