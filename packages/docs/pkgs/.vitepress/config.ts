@@ -54,29 +54,20 @@ export default defineConfig({
                         {text: 'Permissions', link: '/translate/appwrite/advanced/permissions'}
                     ]
                 }
-                // {
-                //   text: '文章',
-                //   items: [
-                //     // This shows `/guide/index.md` page.
-                //     { text: 'CSS类', link: '/translate/articles/css' }, // /guide/index.md
-                //   ]
-                // }
             ],
             '/translate/articles/': [
                 {
                     text: 'CSS类',
                     items: [
-                        // This shows `/guide/index.md` page.
-                        {text: 'CSS调试指南', link: '/translate/articles/css/guide-debugging-css'} // /guide/index.md
+                        {text: 'CSS调试指南', link: '/translate/articles/css/guide-debugging-css'} 
+                    ]
+                },
+                {
+                    text: 'TypeScript',
+                    items: [
+                        {text: 'ts 常见的 7 个问题', link: '/translate/articles/ts/the-top-stack-overflowed-typescript-questions-explained'} 
                     ]
                 }
-                // {
-                //   text: '文章',
-                //   items: [
-                //     // This shows `/guide/index.md` page.
-                //     { text: 'CSS类', link: '/translate/articles/css' }, // /guide/index.md
-                //   ]
-                // }
             ]
         }
     }
