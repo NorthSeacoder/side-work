@@ -15,6 +15,8 @@
 -   []admin
     -   知识点管理
 -   franky 支持点击跳转
+    -   直接打开文档
+    -   文本块格式化(prettier 本身功能)
 -   side-work 添加 docs
     -   常用文档翻译
     -   各种工具文档
