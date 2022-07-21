@@ -10,6 +10,7 @@
 -   franky 切换为 ts 以及打包(vite/webpack)
     -   支持直接打开文档相关页面参考[connector](org-93011474@github.com:mintlify/connector.git)
 -   chrome 扩展
+    -   点击直接打开相应项目
     -   支持本地修改 feat/prod
     -   直接记录到 appwrite
 -   []admin
@@ -21,10 +22,10 @@
     -   常用文档翻译
     -   各种工具文档
 -   利用 github-action 实现每日复习提醒
--   参考[流莺书签](https://github.com/alanhzw/warbler-homepage)
     -   [rss 定时提醒](https://github.com/ChanceYu/front-end-rss)
 -   [readme](https://github.com/Louis3797/awesome-readme-template) 优化 readme 格式
 
+    -   readme 文件拆分
     -   整个模板?
 
 -   [freenom](https://www.freenom.com/zh/index.html?lang=zh)免费域名
@@ -61,9 +62,12 @@
 -   [神经网络](https://brain.js.org/#/)
 -   [SMSBoom](https://github.com/OpenEthan/SMSBoom)
 -   [github action 自动抓取图片](https://github.com/niumoo/bing-wallpaper)
+-   [Add to Calendar Button](https://jekuer.github.io/add-to-calendar-button/)
 
 ## 阅读(初筛)
 
+-   [13 个面面试题网站](https://realtoughcandy.com/faang-interview-prep/)
+-   [Using Grids in Interface Designs](https://www.nngroup.com/articles/using-grids-in-interface-designs/)
 -   [ts 常见的 7 个问题](https://www.freecodecamp.org/news/the-top-stack-overflowed-typescript-questions-explained/)
 -   [vue hook](https://blog.logrocket.com/getting-started-vue-composables/)
 -   [怎样不阻塞浏览器](https://medium.com/@matthew.costello/frontend-web-performance-the-essentials-1-cb6513e1c3a1)
@@ -105,6 +109,9 @@
 
 ### 中文
 
+-   [ts 类型 challenge](https://juejin.cn/post/7115789691810480135)
+-   [面试题](https://mp.weixin.qq.com/s/t8Id1E0tSMxcqiCs_O6uwg)
+-   [函数组合](https://juejin.cn/post/7089725586712559652)
 -   [转场动画](https://mp.weixin.qq.com/s/2jFTraKRPykCR4J82O3qQg)
 -   [google 软件工程(docs 参考)](https://qiangmzsx.github.io/Software-Engineering-at-Google/#/zh-cn/Foreword)
 -   [java 学 web](https://imf.ms/web/2022/07/05/my-first-web-hybird-project-experience/)
