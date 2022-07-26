@@ -57,6 +57,9 @@
 
 ## 工具
 
+-   [用户登录](https://logto.cn/)
+-   [3D 视差悬停效果](https://atroposjs.com/)
+-   [实时测试库](https://wallabyjs.om/purchase/#) -[窗格库](https://cocopon.github.io/tweakpane/)
 -   [命令行展示优化](https://github.com/sindresorhus/yoctocolors)
 -   [从模板生产 doc](https://github.com/alonrbar/easy-template-x)
 -   [神经网络](https://brain.js.org/#/)
@@ -66,6 +69,12 @@
 
 ## 阅读(初筛)
 
+-   [js 中的 this](https://ui.dev/this-keyword-call-apply-bind-javascript)
+-   [npm 包的 10 个最佳实践](https://snyk.io/blog/ten-npm-security-best-practices/)
+-   [优化 js packages](https://blog.sentry.io/2022/07/19/javascript-sdk-package-reduced)
+-   [js 中常见的 10 个问题](https://www.toptal.com/javascript/10-most-common-javascript-mistakes)
+-   [js 中的对象](https://www.freecodecamp.org/news/objects-in-javascript-for-beginners/)
+-   [10 种 css 居中 div 的方式](https://www.freecodecamp.org/news/how-to-center-a-div-with-css-10-different-ways/)
 -   [13 个面面试题网站](https://realtoughcandy.com/faang-interview-prep/)
 -   [Using Grids in Interface Designs](https://www.nngroup.com/articles/using-grids-in-interface-designs/)
 -   [ts 常见的 7 个问题](https://www.freecodecamp.org/news/the-top-stack-overflowed-typescript-questions-explained/)
